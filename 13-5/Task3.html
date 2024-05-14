@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .father{
+            border: dotted 2px;
+            width: fit-content;
+            position: relative;
+        }
+        div{
+            width:100px;
+            height: 100px;
+            display:inline-block;
+        }
+        .red{
+            background-color: red;
+        }
+        #green1, #green2, #green3{
+            background-color: green;
+        }
+        #green2{
+            position:relative;
+            top:20px; 
+            left: 20px;
+        }
+        #green3{
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+        p{
+            padding-left: 10px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <p>Position: Staic</p>
+    <div class="father">
+        <div class="red">One</div>
+        <div id="green1">Tow</div>
+        <div class="red">Three</div>
+        <div class="red">Four</div>
+    </div>
+    <p>Position: Relative</p>
+    <div class="father">
+        <div class="red">One</div>
+        <div id="green2">Tow</div>
+        <div class="red">Three</div>
+        <div class="red">Four</div>
+    </div>
+    <p>Position: Absolute</p>
+    <div class="father">
+        <div class="red">One</div>
+        <div id="green3">Tow</div>
+        <div class="red">Three</div>
+        <div class="red">Four</div>
+    </div>
+</body>
+</html>
